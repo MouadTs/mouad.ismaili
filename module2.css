@@ -1,0 +1,124 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Domine', serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    background-color: #F4F4F4;
+
+}
+h1{
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 7rem;
+}
+.container{
+    display: flex;
+justify-content: center;  
+flex-wrap: wrap;
+    gap: 1rem;
+}
+.element{
+    border: 4px solid black;
+    width: 28rem;
+    height: 12rem;
+    background-color: #E4E4E4;
+}
+.word{
+    position: relative;
+    max-width: 10rem;
+    height: 2.5rem;
+    text-align: center;
+    
+    border: 3px solid black;
+    border-top: none;
+    border-right: none;
+
+    left: 280px; 
+    padding-top: 5px;
+
+}
+p{
+   margin: 20px;
+   font-size: 1.2rem;
+}
+.color1{
+    background-color: #30D450;
+}
+.color2{
+   background-color: #FCFC04;
+}
+.color3{
+   background-color: #F46C04;
+}
+
+
+@media only screen and (min-width:992px) {
+    .container{
+        display: flex;
+    justify-content: center;  
+    flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .element{
+        border: 4px solid black;
+        max-width: 28rem;
+        height: 12rem;
+        background-color: #E4E4E4;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .element {
+        flex-basis: calc(50% - 20px);
+        overflow: hidden;
+        
+      }
+      p{
+        margin: 10px;
+     }
+   
+    
+      .element:nth-child(3) {
+        flex-basis: 100%;
+      }
+      .color1,.color2{
+        position: relative;
+        left: 55%   ;
+        
+
+      }
+
+      .color3 {
+        position: relative;
+        left: 82%   ;
+       }
+  }
+
+@media screen and (max-width:767px) {
+    .element {
+        flex-basis: 100%;
+        margin: 1rem;
+        overflow: hidden;
+      }
+      .color1,.color2,.color3{
+        position: relative;
+        left: 77%   ;
+        overflow: hidden;
+        text-align: start;
+        padding-left: 15px;
+        font-size: 1.3rem;
+        
+
+      }
+    
+}
+  
